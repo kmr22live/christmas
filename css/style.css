@@ -759,4 +759,89 @@ body{
   border-radius:10px;
   
 }
+/* snow */
+
+
+@font-face {
+  font-family: 'snowFont';
+  src: url('https://cdn.rawgit.com/ZaurT/fonts/master/MapleCartoon.otf');
+}
+
+.background{
+  width:100%;
+  height:100%;
+  /*background:#8cccff;*/
+  background:url(https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 5%;
+  background-size:cover;
+  max-height: 100%;
+  overflow: hidden;
+  z-index:900;
+}
+::-webkit-scrollbar{
+    display:none !important
+}
+.bg-opacity{
+  background:#000;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  opacity:0.5;
+}
+
+.background h1,
+.background h2{
+  color:#fff;
+  width:100%;
+  text-align:center;
+  font-family:Verdana, Geneva, sans-serif;
+  line-height:1;
+  position:relative;
+  z-index:999;
+  font-weight:100;
+}
+
+.background h1{
+  margin:50px 0 0 0;
+  font-size:150pt;
+  text-shadow:0 0 10px #000;
+  font-family:'snowFont';
+  line-height:0.6;
+}
+.background h2{
+  font-size:32pt;
+  color:#FFEE58;
+  font-family: 'Dancing Script', cursive;
+}
+
+.flake path{
+  fill:#fff;
+}
+
+.flake-wrapper{
+  position:absolute;
+  z-index:999;
+}
+
+@keyframes falling{
+  0%{
+    top:-50px;
+    opacity:1;
+  }
+  50%{
+    opacity:1;
+  }
+  80%{
+    opacity:0;
+  }
+  100%{
+    top:100%;
+    opacity:0;
+  }
+}
+
+.flake{
+  width:100%;
+  height:100%;
+}
 /*# sourceMappingURL=style.css.map */
